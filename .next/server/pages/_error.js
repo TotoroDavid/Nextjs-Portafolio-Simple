@@ -342,9 +342,8 @@ module.exports = require("next/router");
 
 "use strict";
 
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
 
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__("YFqc");
@@ -352,47 +351,63 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 // CONCATENATED MODULE: ./components/NavBar.js
 
-var __jsx = external_react_default.a.createElement;
 
 
-const Navbar = () => __jsx("nav", {
-  className: "navbar navbar-expand-lg navbar-dark bg-dark"
-}, __jsx("div", {
-  className: "container"
-}, __jsx(link_default.a, {
-  href: "/"
-}, __jsx("a", {
-  className: "navbar-brand"
-}, "Simple portfolio")), __jsx("button", {
-  className: "navbar-toggler",
-  type: "button",
-  "data-bs-toggle": "collapse",
-  "data-bs-target": "#navbarNav",
-  "aria-controls": "navbarNav",
-  "aria-expanded": "false",
-  "aria-label": "Toggle navigation"
-}, __jsx("span", {
-  className: "navbar-toggler-icon"
-})), __jsx("div", {
-  className: "collapse navbar-collapse",
-  id: "navbarNav"
-}, __jsx("ul", {
-  className: "navbar-nav ml-auto"
-}, __jsx("li", {
-  className: "nav-item"
-}, __jsx(link_default.a, {
-  href: "/blog"
-}, __jsx("a", {
-  className: "nav-link"
-}, "Blog"))), __jsx("li", {
-  className: "nav-item"
-}, __jsx(link_default.a, {
-  href: "/github"
-}, __jsx("a", {
-  className: "nav-link"
-}, "GitHub")))))));
+
+const Navbar = () => /*#__PURE__*/Object(jsx_runtime_["jsx"])("nav", {
+  className: "navbar navbar-expand-lg navbar-dark bg-dark",
+  children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    className: "container",
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
+      href: "/",
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+        className: "navbar-brand",
+        children: "Simple portfolio"
+      })
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+      className: "navbar-toggler",
+      type: "button",
+      "data-bs-toggle": "collapse",
+      "data-bs-target": "#navbarNav",
+      "aria-controls": "navbarNav",
+      "aria-expanded": "false",
+      "aria-label": "Toggle navigation",
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+        className: "navbar-toggler-icon"
+      })
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      className: "collapse navbar-collapse",
+      id: "navbarNav",
+      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
+        className: "navbar-nav ml-auto",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
+          className: "nav-item",
+          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
+            href: "/blog",
+            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+              className: "nav-link",
+              children: "Blog"
+            })
+          })
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
+          className: "nav-item",
+          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
+            href: "/github",
+            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+              className: "nav-link",
+              children: "GitHub"
+            })
+          })
+        })]
+      })
+    })]
+  })
+});
 
 /* harmony default export */ var NavBar = (Navbar);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__("4Q3z");
 
@@ -402,7 +417,7 @@ var external_nprogress_default = /*#__PURE__*/__webpack_require__.n(external_npr
 
 // CONCATENATED MODULE: ./components/Layout.js
 
-var Layout_jsx = external_react_default.a.createElement;
+
 
 
 
@@ -426,17 +441,28 @@ const Layout = ({
       router.events.off('routeChangeStart', handleRouterChange);
     };
   });
-  return Layout_jsx("div", {
-    className: dark ? 'bg-dark' : ''
-  }, Layout_jsx(NavBar, null), Layout_jsx("main", {
-    className: "container py-4"
-  }, title && Layout_jsx("h1", {
-    className: "text-center text-light"
-  }, title), children), footer && Layout_jsx("footer", {
-    className: "bg-dark text-light text-center"
-  }, Layout_jsx("div", {
-    className: "container p-4"
-  }, Layout_jsx("h1", null, "&copy Ryan Ray Portfolio"), Layout_jsx("p", null, " 2000 - ", new Date().getFullYear()), Layout_jsx("p", null, "All rights reserved."))));
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    className: dark ? 'bg-dark' : '',
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(NavBar, {}), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("main", {
+      className: "container py-4",
+      children: [title && /*#__PURE__*/Object(jsx_runtime_["jsx"])("h1", {
+        className: "text-center text-light",
+        children: title
+      }), children]
+    }), footer && /*#__PURE__*/Object(jsx_runtime_["jsx"])("footer", {
+      className: "bg-dark text-light text-center",
+      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "container p-4",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h1", {
+          children: "&copy Ryan Ray Portfolio"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+          children: [" 2000 - ", new Date().getFullYear()]
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+          children: "All rights reserved."
+        })]
+      })
+    })]
+  });
 };
 
 /* harmony default export */ var components_Layout = __webpack_exports__["a"] = (Layout);
@@ -571,6 +597,13 @@ function formatUrl(urlObj) {
   search = search.replace('#', '%23');
   return `${protocol}${host}${pathname}${search}${hash}`;
 }
+
+/***/ }),
+
+/***/ "F5FC":
+/***/ (function(module, exports) {
+
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
@@ -926,19 +959,24 @@ exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("5Yp1");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const _error = ({
   statusCode
 }) => {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], null, statusCode ? __jsx("p", {
-    className: "text-center"
-  }, "could not to load your page: status code ", statusCode) : __jsx("p", null, "could not to get this page "));
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    children: statusCode ? /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("p", {
+      className: "text-center",
+      children: ["could not to load your page: status code ", statusCode]
+    }) : /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      children: "could not to get this page "
+    })
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (_error);
